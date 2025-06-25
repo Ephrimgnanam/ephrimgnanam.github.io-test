@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACTICAL_TERMINAL :: PhantomForge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Effects -->
+    <div class="background-effects">
+        <div class="scanline"></div>
+        <div class="grid"></div>
+        <div class="missile-silo">
+            <!-- Missiles will be cloned from this template by JS -->
+            <svg class="missile-template" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 400">
+                <path d="M50 0 L65 50 L65 350 L50 400 L35 350 L35 50 Z" fill="var(--color-accent-red)"/>
+                <path d="M50 380 L25 400 L75 400 Z" fill="var(--color-text-blue)"/>
+            </svg>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <p>[ In Christ alone my hope is found ✝️ ]</p>
+    </header>
+
+    <!-- Main Navigation (Initially Hidden) -->
+    <nav id="main-nav" class="hidden">
+        <a href="#" data-page="blog" class="nav-link active">> LOGS_</a>
+        <a href="#" data-page="misc" class="nav-link">> ARSENAL_</a>
+        <a href="#" data-page="about" class="nav-link">> DOSSIER_</a>
+    </nav>
+    
+    <main>
+        <!-- Home / Landing Page -->
+        <section id="home" class="page">
+            <div class="terminal-window">
+                <div class="terminal-header">>_ PHANTOMFORGE_TERMINAL :: ROOT/HOME</div>
+                <div id="terminal-body" class="terminal-body">
+                    <!-- JS will type content here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Page -->
+        <section id="blog" class="page hidden">
+            <h2>> ls -l /var/log/posts</h2>
+            <div class="blog-list-container">
+                <div class="blog-list">
+                    <a href="#" class="blog-post">
+                        <span class="permissions">-rw-r--r--</span>
+                        <span class="author">1 PhantomForge</span>
+                        <span class="group">users</span>
+                        <span class="size">1.2K</span>
+                        <span class="date">Oct-26-2023</span>
+                        <span class="title">[The_Theology_of_Cyberwarfare.md]</span>
+                    </a>
+                    <a href="#" class="blog-post">
+                        <span class="permissions">-rw-r--r--</span>
+                        <span class="author">1 PhantomForge</span>
+                        <span class="group">users</span>
+                        <span class="size">2.5K</span>
+                        <span class="date">Oct-18-2023</span>
+                        <span class="title">[Analysis_of_Stuxnet_Payload.md]</span>
+                    </a>
+                    <a href="#" class="blog-post">
+                        <span class="permissions">-rw-r--r--</span>
+                        <span class="author">1 PhantomForge</span>
+                        <span class="group">users</span>
+                        <span class="size">874B</span>
+                        <span class="date">Sep-30-2023</span>
+                        <span class="title">[Project_Chimera_Update_01.md]</span>
+                    </a>
+                    <a href="#" class="blog-post">
+                        <span class="permissions">-rw-r--r--</span>
+                        <span class="author">1 PhantomForge</span>
+                        <span class="group">users</span>
+                        <span class="size">1.8K</span>
+                        <span class="date">Sep-15-2023</span>
+                        <span class="title">[On_Deterrence_and_Digital_Fortresses.md]</span>
+                    </a>
+                </div>
+                <div class="scroll-cursor">█</div>
+            </div>
+        </section>
+
+        <!-- Miscellaneous Page -->
+        <section id="misc" class="page hidden">
+            <h2>> ACCESSING ARSENAL...</h2>
+            <div class="misc-grid">
+                <div class="misc-card">
+                    <h3>// PROJECT: IRON DOME SIM</h3>
+                    <p class="meta">[LIVE DEMO] [PHYSICS_ENGINE]</p>
+                    <p>A web-based simulation of missile defense mechanics using particle physics.</p>
+                    <p class="status">STATUS: <span class="neon-green">OPERATIONAL</span></p>
+                </div>
+                <div class="misc-card">
+                    <h3>// RESEARCH: PHISHING VECTORS</h3>
+                    <p class="meta">[PDF] [CLASSIFIED_REPORT]</p>
+                    <p>Analysis of emerging social engineering tactics targeting corporate infrastructure.</p>
+                    <p class="status">STATUS: <span class="neon-green">COMPLETE</span></p>
+                </div>
+                <div class="misc-card">
+                    <h3>// EXPERIMENT: CRT_SHADER_GLSL</h3>
+                    <p class="meta">[CODE_SNIPPET] [WEBGL]</p>
+                    <p>GLSL shader to replicate authentic CRT monitor distortion and glow.</p>
+                    <p class="status">STATUS: <span class="radar-blue">IN_PROGRESS</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page hidden">
+            <h2>> cat /root/dossier.txt</h2>
+            <div class="dossier-content">
+                <p>> AGENT: PhantomForge</p>
+                <p>> CLEARANCE: LEVEL 7 (TS/SCI)</p>
+                <p>> AFFILIATION: UNKNOWN</p>
+                <br>
+                <p>> [ Begin personal statement... ]</p>
+                <p>> I am a cybersecurity professional and a follower of Christ, navigating the complex intersection of digital warfare, defensive engineering, and theology.</p>
+                <p>> This terminal serves as my personal log—a place for research, reflection, and strategic thought experiments. The content here explores the dualities of creation and destruction, defense and offense, in the bits and bytes that define our modern world.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Side Banners -->
+    <div class="side-banner left">Viva la Hackers 🇫🇷</div>
+    <div class="side-banner right">Slava Ukraini 🇺🇦</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>> Engineered in the Dark by PhantomForge_</p>
+        <div class="visitor-counter">[Visitors: 0001337]</div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
